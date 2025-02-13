@@ -1,0 +1,107 @@
+\documentclass[10pt,a4paper,sans]{moderncv}
+\moderncvstyle{classic}
+\moderncvcolor{green}
+
+\usepackage[scale=0.85]{geometry}
+\setlength{\footskip}{136.00005pt}
+
+\ifxetexorluatex
+\usepackage{fontspec}
+\usepackage{unicode-math}
+\defaultfontfeatures{Ligatures=TeX}
+\setmainfont{Liberation Serif}
+\setsansfont{Liberation Sans}
+\setmonofont{Liberation Mono}
+\setmathfont{Latin Modern Math}
+\else
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\fi
+
+% document language
+\usepackage[english, russian]{babel}
+
+% personal data
+\name{Максимов}{Матвей Алексеевич}
+\title{Системный администратор GNU/Linux}
+\born{25 апреля 2005}
+\address{Ворошилова, 27--22}{426053, Ижевск}{Россия}
+\phone[mobile]{+7~982~119-11-86}
+\email{maksimovmatvey2005@gmail.com}
+% \email{maximov-matvi@yandex.ru}
+
+% Social icons
+\social[github]{MMatveyA}
+\social[gitlab]{MMatveyA}
+\social[stackoverflow]{23356580/Матвей-Максимов}
+\social[telegram]{mmatvey1123}
+\social[whatsapp]{89821191186}
+\social[matrix]{@mmatvey:matrix.org}
+
+\extrainfo{Это резюме полностью создано в терминале \\
+с помощью \LaTeX{} и NeoVim}
+% \photo[98pt][0.4pt]{picture}
+
+\begin{document}
+\makecvtitle
+
+\section{Образование}
+
+\cventry{2023--2029}{Радиотехнические системы и комплексы}{ИжГТУ
+	им.~М.~Т.~Калашникова}{Ижевск}{\textit{Специалитет}}{}
+
+\section{Опыт работы}
+
+\subsection{Профессиональный}
+
+\cventry{2022--2024}{Системный администратор}{Фриланс}{Россия}{}{Эпизодическая
+	помощь с настройкой серверов на базе GNU/Linux, установка и настройка простых
+	серверных приложений на базе серверов Apache, Nginx; проектирование баз данных
+	для MySQL и PostgreSQL}
+\subsection{Прочее}
+\cventry{2024}{Проводник пассажирского вагона}{АО
+	``ФПК''}{Ижевск}{}{Работа проводником в летний период. Увольнение
+	в связи с началом нового учебного года}
+
+\section{Основные навыки}
+
+\cvskillplainlegend*[0.2em][Базовые знания][Расширенные знания][Опыт
+	использования в проектах][Обширный опыт использования][Эксперт]{}
+\cvskillhead[0.1em][Знания][Навык][Опыт][Комментарий]
+
+\cvskillentry*{ОС:}{4}{GNU/Linux}{4}{Использование разнообразных и
+	специфичных дистрибутивов}
+\cvskillentry*{Базы данных:}{3}{PostgreSQL}{2}{Установка и настройка базы
+	данных для обеспечения доступа по локальной сети и сохранения безопасности
+	подключения; установка и настройка \href{https://www.pgadmin.org/}{pgAdmin}}
+\cvskillentry{}{1}{MySQL}{1}{Установка и базовая настройка; подключение
+	\href{https://www.phpmyadmin.net/}{phpMyAdmin}}
+\cvskillentry{}{1}{MongoDB}{1}{Установка и базовая настройка}
+\cvskillentry*{Языки программирования:}{2}{SQL}{2}{Проектирование баз данных,
+	включающих в себя множество связей с помощью ключей (\texttt{foreign key});
+	написание запросов к этим базам данных}
+
+\section{Иностранные языки}
+
+\cvitemwithcomment{Английский}{Технический}{Чтение технической
+	литературы, базовый разговорный}
+\cvitemwithcomment{Японский}{Слабый}{В процессе изучения}
+
+\section{Прочее}
+
+\cvitem{Командная строка}{Уверенное использование различных командных оболочек,
+	способность решить большинство возникающих проблем через командную строку.}
+\cvitem{GNU/Linux}{Помимо использования простых и не сложных в настройке
+	дистрибутивов GNU/Linux (таких, как Debian, Fedora, ArchLinux), есть опыт в
+	использовании более специфичных дистрибутивов: Gentoo, Artix, Devuan
+	(дистрибутивы, свободные от SystemD; Gentoo также позволяет гибко настраивать
+	процесс компиляции пакетов через USE--флаги), Void Linux (дистрибутив,
+	использующий \href{https://www.musl-libc.org}{musl-libc} вместо
+	\href{https://www.gnu.org/software/libc/}{glibc}), NixOS (дистрибутив,
+	нацеленный на воспроизводимость установки и полностью
+	настраиваемый через единый
+	конфигурационный файл). Сейчас в процессе изучения возможностей использования
+	дистрибутивов, основанных на GNU/Linux, на процессорах, использующих
+	архитектуру ARMv8.}
+
+\end{document}
